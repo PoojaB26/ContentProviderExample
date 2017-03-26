@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+
+    <ListView android:id="@+id/contactList"
+        android:layout_weight="8.5"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_above="@+id/add" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_weight="0.8"
+        android:gravity="center"
+        android:textSize="9sp"
+        android:text="Developed by Pooja Bhaumik"
+        android:padding="5dp"/>
+
+
+    <Button android:id="@+id/add"
+        android:layout_weight="0.8"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:text="ADD CONTACT"
+        android:background="#DC7563"
+        android:textColor="#ffffff"
+         />
+</LinearLayout>

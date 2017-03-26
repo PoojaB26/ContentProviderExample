@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ContactManagerIBM</string>
+    <string name="menu_settings">Settings</string>
+
+    <string name="add_country">Add a new Country</string>
+    <string name="country_info">Country Information</string>
+    <string name="country_code">Code</string>
+    <string name="country_name">Name</string>
+    <string name="save_country">Save</string>
+    <string name="del_country">Delete</string>
+    <string name="choose_text">Choose Continent</string>
+
+    <string-array name="category_array">
+        <item>Friends</item>
+        <item>Business</item>
+        <item>Family</item>
+
+    </string-array>
+</resources>

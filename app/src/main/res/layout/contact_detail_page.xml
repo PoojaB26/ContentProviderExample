@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    >
+    <LinearLayout
+        android:layout_weight="9.9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:layout_margin="30dp"
+        android:text="Contact Information"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView2"
+            android:layout_margin="10dp"
+            android:text="@string/country_name"
+            />
+
+        <EditText android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_toRightOf="@+id/textView3"
+            android:ems="30"
+            android:background="#ffffff"
+            android:inputType="text"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_margin="10dp"
+            android:text="Phone"
+            />
+
+        <EditText android:id="@+id/phone"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10" android:maxLength="10"
+            android:inputType="textCapCharacters"
+            android:background="#ffffff"
+            android:paddingLeft="10dp"/>
+        <requestFocus />
+
+        />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView2"
+            android:layout_margin="10dp"
+            android:text="Email ID"
+            />
+
+        <EditText android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView4"
+            android:ems="30"
+            android:inputType="text"
+            android:background="#ffffff"
+            android:layout_margin="10dp"
+            android:paddingLeft="10dp" />
+
+        />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/choose_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView1"
+            android:text="Choose Category"
+            android:layout_marginTop="10dp"
+            />
+
+        <Spinner android:id="@+id/categoryList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/choose_text" />
+    </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:weightSum="4">
+    <Button android:id="@+id/save"
+        android:layout_weight="2"
+        android:background="#DC7963"
+        android:textColor="#ffffff"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_alignParentRight="true" android:layout_below="@+id/email"
+
+        android:text="@string/save_country" />
+
+    <Button android:id="@+id/delete"
+        android:layout_weight="2"
+        android:background="#f69f8c"
+        android:textColor="#ffffff"
+
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/save" android:layout_alignBottom="@+id/save"
+        android:layout_toLeftOf="@+id/save" android:text="@string/del_country" />
+    </LinearLayout>
+</LinearLayout>
